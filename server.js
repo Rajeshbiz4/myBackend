@@ -129,7 +129,7 @@ server.timeout = 60000;
 //start listening
 models.sequelize.sync().then(function() {
   server.start(function() {
-    //  console.log("server start at:===", server.info.uri)
+    console.log("server start at:===", server.info.uri)
   });
 });
 
