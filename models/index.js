@@ -11,7 +11,7 @@ console.log('config.use_env_variable', config.use_env_variable)
 var db = {};
 
 if (config.use_env_variable) {
-  console.log('if variable');
+  console.log('if variable', process.env[config.use_env_variable]);
   var sequelize = new Sequelize(process.env[config.use_env_variable]);
 } else {
   console.log('else variable');
