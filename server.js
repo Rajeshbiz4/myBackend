@@ -23,15 +23,16 @@ var cors = {
 };
 
 
-server.connection({
-  port: 3400,
-  routes: {
-    cors: cors,
-    payload: {
-      maxBytes: 209715200
-    }
-  }
-});
+// server.connection({
+//   port: 3400,
+//   routes: {
+//     cors: cors,
+//     payload: {
+//       maxBytes: 209715200
+//     }
+//   }
+// });
+
 
 
 
@@ -130,6 +131,9 @@ server.timeout = 60000;
 models.sequelize.sync().then(function() {
   server.start(function() {
     console.log("server start at:===", server.info.uri)
+  });
+  server.listen(process.env.PORT || 5000, function() {
+    console.log("Server started.......");
   });
 });
 
