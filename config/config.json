@@ -1,6 +1,6 @@
 {
   "development": {
-
+    "use_env_variable": "127.0.0.1",
     "username": "postgres",
     "password": "root",
     "database": "postgres",
@@ -9,7 +9,7 @@
     "dialect": "postgres"
   },
   "test": {
-
+    "use_env_variable": "127.0.0.1",
     "username": "postgres",
     "password": "root",
     "database": "postgres",
@@ -18,7 +18,7 @@
     "dialect": "postgres"
   },
   "production": {
-
+    "use_env_variable": "127.0.0.1",
     "username": "postgres",
     "password": "root",
     "database": "postgres",
