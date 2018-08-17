@@ -7,21 +7,11 @@ var gcm = require('node-gcm');
 var server = new Hapi.Server();
 var models = require('./models');
 
-
-
-//load custom modules
-
-
-
-//load custom modules
-
-
 module.exports = {};
 
 var cors = {
   additionalHeaders: ['if-modified-since', 'accept', 'expiry', 'access-token']
 };
-
 
 server.connection({
   port: 3400,
@@ -32,9 +22,6 @@ server.connection({
     }
   }
 });
-
-
-
 
 var device_token;
 
@@ -132,9 +119,9 @@ models.sequelize.sync().then(function() {
   server.start(function() {
     console.log("server start at:===", server.info.uri)
   });
-  server.listen(process.env.PORT || 5000, function() {
-    console.log("Server started.......");
-  });
+  // server.listen(process.env.PORT || 5000, function() {
+  //   console.log("Server started.......");
+  // });
 });
 
 
