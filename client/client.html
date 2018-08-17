@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.4.8/socket.io.min.js"></script>
+<script>
+
+
+
+  var socket = io('http://localhost:3401',{
+    'query':{'nickname':'rere','sendername':'prashant'}
+  });
+  socket.on('chat msg',function(data){
+    console.log('in client');
+    console.log(data);
+  });
+
+
+
+</script>
+</head>
+
+<body>
+
+    Message:<br>
+    <input id='msg' type="text" name="msg"><br>
+
+    <!-- <button onclick="()">Click me</button> -->
+
+
+</body>
+</html>
