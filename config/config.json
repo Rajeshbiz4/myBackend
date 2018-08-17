@@ -1,29 +1,26 @@
 {
   "development": {
-
     "username": "postgres",
     "password": "root",
     "database": "postgres",
     "host": "127.0.0.1",
-    "port": 5432,
+    "port": 8081,
     "dialect": "postgres"
   },
   "test": {
-
     "username": "postgres",
     "password": "root",
     "database": "postgres",
     "host": "127.0.0.1",
-    "port": 5432,
+    "port": 8081,
     "dialect": "postgres"
   },
   "production": {
-
     "username": "postgres",
     "password": "root",
     "database": "postgres",
     "host": "127.0.0.1",
-    "port": 5432,
+    "port": 8081,
     "dialect": "postgres"
   }
 
