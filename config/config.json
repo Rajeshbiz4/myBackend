@@ -18,7 +18,7 @@
     "dialect": "postgres"
   },
   "production": {
-    "use_env_variable": "127.0.0.1:8081",
+    "use_env_variable": "postgres://wgpxmyzgyokdly:990fc7590c77a8bd32a069db171bc7896ba5e1a52e744a341c4776bc10635e97@ec2-107-21-98-165.compute-1.amazonaws.com:5432/d85akou4sak1ok",
     "username": "postgres",
     "password": "root",
     "database": "postgres",
