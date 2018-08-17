@@ -23,15 +23,15 @@ var cors = {
 };
 
 
-// server.connection({
-//   port: 3400,
-//   routes: {
-//     cors: cors,
-//     payload: {
-//       maxBytes: 209715200
-//     }
-//   }
-// });
+server.connection({
+  port: 3400,
+  routes: {
+    cors: cors,
+    payload: {
+      maxBytes: 209715200
+    }
+  }
+});
 
 
 
