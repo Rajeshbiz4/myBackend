@@ -14,7 +14,7 @@ var cors = {
 };
 
 server.connection({
-  port: 3400,
+  port: process.env.PORT,
   routes: {
     cors: cors,
     payload: {
